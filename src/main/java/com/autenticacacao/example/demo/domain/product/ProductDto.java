@@ -1,4 +1,4 @@
-package com.autenticacacao.example.demo.models.product;
+package com.autenticacacao.example.demo.domain.product;
 
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;

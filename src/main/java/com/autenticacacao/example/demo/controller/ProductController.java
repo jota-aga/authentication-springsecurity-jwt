@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.autenticacacao.example.demo.domain.product.Product;
+import com.autenticacacao.example.demo.domain.product.ProductDto;
 import com.autenticacacao.example.demo.exceptions.NameAlreadyExistsException;
 import com.autenticacacao.example.demo.exceptions.ProductNotExistsException;
-import com.autenticacacao.example.demo.models.product.Product;
-import com.autenticacacao.example.demo.models.product.ProductDto;
 import com.autenticacacao.example.demo.service.ProductService;
 
 import jakarta.validation.Valid;
