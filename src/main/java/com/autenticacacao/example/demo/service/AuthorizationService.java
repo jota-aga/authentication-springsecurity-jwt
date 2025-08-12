@@ -1,5 +1,7 @@
 package com.autenticacacao.example.demo.service;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -27,5 +29,15 @@ public class AuthorizationService implements UserDetailsService {
 		}
 		repo.save(user);
 	}
-
+	
+	public User getUserById(Long id) {
+		Optional<User> user = repo.findById(id);
+		
+		if(user.isPresent()) {
+			return user.get();
+		}
+		else {
+			return null;
+		}
+	}
 }
